@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+.faq__section {
+    padding: 80px 5.1%;
+}
+
+.faq__inner {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.faq__item__question  {
+    padding: 14px 16px;
+    background-color: var(--color-bg-accent);
+
+    color: var(--color-text-heading);
+    font-family: var(--font-body-ja);
+    font-size: 1.6rem;
+    line-height: 1.8;
+    letter-spacing: 0.08em;
+
+    cursor: pointer;
+    transition: opacity 0.4s;
+}
+
+.faq__item__question:hover {
+    opacity: 0.75;
+}
+
+.faq__item__answer {
+    padding: 14px 16px 0 16px;
+}
+
+.faq__item__answer-text {
+    color: var(--color-text-heading);
+    font-family: var(--font-body-ja);
+    font-size: 1.6rem;
+    line-height: 2;
+    letter-spacing: 0.08em;
+}
+
+.faq__item__question {
+    position: relative;
+
+    list-style-type: none;
+
+    /* questionの文字とアイコンが被らんようにするため（アイコンは擬似要素やからパディングは普通に文字の右にくる） */
+    padding-right: 50px;
+    
+}
+
+.faq__item__question::after {
+    position: absolute;
+
+    content: " ";
+    width: 24px;
+    height: 24px;
+    border: 1px solid #4A4A4A;
+    border-radius: 50%;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.faq__item__question::before {
+    position: absolute;
+
+    content: " ";
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid #4A4A4A;
+    border-bottom: 1px solid #4A4A4A;
+
+    /* 円の直径24pxの半分の12px + 右に余白開けるための16px ＝　28px */
+    right: 28px;
+    top: 50%;
+    transform: translate(50%, -50%) rotate(45deg);
+
+    transition: all 0.5s ease-out;
+}
+
+.faq__item[open] .faq__item__question::before {
+    transform: translate(50%, -50%) rotate(-135deg);
+}
+
+.faq__item__answer-form,
+.faq__item__answer-form,
+.faq__item__answer-mail {
+    border-bottom: 1px solid #6A6A6A;
+    z-index: 100;
+    transition: opacity 0.4s ease;
+}
+
+.faq__item__answer-form:hover,
+.faq__item__answer-form:hover,
+.faq__item__answer-mail:hover {
+    opacity: 0.7;
+}
+
+/* ol 1. 2. 3.　のリスト表示*/
+.faq__item__answer-list--ol {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+/* ul　・・・　のリスト表示 */
+.faq__item__answer-list--ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .faq__section {
+        padding: 130px 5.1%;
+    }
+
+    .faq__inner {
+        max-width: 800px;
+        gap: 48px;
+    }
+}

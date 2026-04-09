@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="PEACHÉのよくある質問ページです。">
+        <title>FAQ | PEACHÉ</title>
+
+        <!-- web font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Crimson+Text:wght@400&family=EB+Garamond:wght@500&family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet">
+        
+        <!-- リセットCSS -->
+        <link rel="stylesheet" href="assets/css/destyle.css">
+        <!-- splide CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+        <!-- style CSS -->
+        <link rel="stylesheet" href="assets/css/common.css">
+        <link rel="stylesheet" href="assets/css/faq.css">
+    </head>
+
+    <body>
+        <div id="faq-page" class="faq-page">
+            <header class="site-header js-header">
+                <div class="site-header__inner">
+                    <h1 class="site-header__logo">
+                        <a class="logo" href="index.html">PEACHÉ</a>
+                    </h1>
+                    <!-- spのみ表示　ハンバーガー -->
+                    <button type="button" class="site-header__open-btn js-site-header-open-btn">
+                        <img src="assets/svg/hamburger-btn.svg" alt="メニューを開く">
+                    </button>
+
+                    <!-- spはドロワー　/ pcは横並びのグローバルナビ -->
+                    <nav class="site-nav js-site-nav" id="site-nav">
+                        
+                        <!-- sp ドロワーのオーバーレイ用 背景　jsでクリックしたときに閉じる処理もつける-->
+                        <div class="site-nav__overlay js-site-nav-overlay"></div>
+
+                        <div class="site-nav__panel">
+                            <div class="site-nav__header">
+                                <a class="logo site-nav__logo" href="index.html">PEACHÉ</a>
+                                <button type="button" class="site-nav__close-btn js-site-nav-close-btn">
+                                    <img src="assets/svg/close-btn.svg" alt="メニューを閉じる">
+                                </button>
+                            </div>
+                            <ul class="site-nav__list">
+                                <li class="site-nav__item"><a href="index.html">TOP</a></li>
+                                <li class="site-nav__item"><a href="fragrance/index.html">FRAGRANCE</a></li>
+                                <li class="site-nav__item"><a href="faq.html">FAQ</a></li>
+                                <li class="site-nav__item"><a href="contact.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="faq-main">
+                <section class="page-hero">
+                    <div class="page-hero__title-group">
+                        <h1 class="page-hero__title">よくある質問</h1>
+                        <p class="page-hero__sabtitle">FAQ</p>
+                    </div>
+
+                    <!-- divの箱の中に、pictureタグとsourceおいて、画面が768以上になったらPC用の画像に自動で切り替わるようにしてる -->
+                    <div class="page-hero__img">
+                        <picture>
+                            <source srcset="assets/img/pc-sab-hero@2x.jpg" media="(min-width: 768px)">
+                            <img src="assets/img/sp-sab-hero@2x.jpg" alt="">
+                        </picture>
+                    </div>
+                </section>
+
+                <nav class="breadcrumb">
+                    <div class="breadcrumb__inner">
+                        <ol class="breadcrumb__list">
+                            <li class="breadcrumb__item">
+                                <a href="index.html">TOP</a>
+                            </li>
+
+                            <li class="breadcrumb__item" aria-current="page">
+                                <a href="">FAQ</a>
+                            </li>
+
+                        </ol>
+                    </div>
+                </nav>
+
+                <section class="faq__section">
+                    <div class="faq__inner">
+                        <details class="faq__item">
+                            <summary class="faq__item__question">商品は、いつ届きますか？</summary>
+                            <div class="faq__item__answer">
+                                <p class="faq__item__answer-text">通常、代金のお支払い確定後５営業日以内に発送いたします。注文の殺到、天候不良や災害などによる交通状態より、配送が遅れる可能性がございます。
+                                    その場合、商品のお届けが通常よりお時間をいただきますので、あらかじめご了承ください。</p>
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__item__question">キャンセルは可能ですか？</summary>
+                            <div class="faq__item__answer">
+                                <p class="faq__item__answer-text">お客様都合でのキャンセルは原則的に承ることが出来かねますので予めご了承くださいませ。</p>
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__item__question">注文をまとめることはできますか？</summary>
+                            <div class="faq__item__answer">
+                                <p class="faq__item__answer-text">ご注文完了後の商品同梱は出来かねます。予めご了承くださいませ。</p>
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__item__question">発送日・発送先を変更したい</summary>
+                            <div class="faq__item__answer">
+                                <p class="faq__item__answer-text">
+                                    梱包前の場合のみ、対応可能です。
+                                    <a href="contact.html" class="faq__item__answer-form">CONTACTフォーム</a>
+                                    「ご注文確認メール」に記載の「受注番号」とご希望日時をお知らせください。必ずしもご希望に添えない場合もございますので、ご了承くださいませ。</p>
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__item__question">注文確認・決済完了メールが届かない</summary>
+                            <div class="faq__item__answer">
+                                <p class="faq__item__answer-text">ご注文確認メールは自動配信にてお送りしております。届かない場合は以下の原因が考えられます。</p>
+                                <ol class="faq__item__answer-list faq__item__answer-list--ol">
+                                    <li class="faq__item__answer-list-item faq__item__answer-text">
+                                        入力したメールアドレスが間違えている
+                                    </li>
+                                    <li class="faq__item__answer-list-item faq__item__answer-text">
+                                        ご注文確定後にメールアドレスの変更を行っている
+                                    </li>
+                                    <li class="faq__item__answer-list-item faq__item__answer-text">
+                                        ご利用されているメールサービス提供元で迷惑メール設定をされている 等
+                                    </li>
+                                </ol>
+                                <p class="faq__item__answer-text">
+                                    <a class="faq__item__answer-mail" href="mailto:info@aaaaaaaaa.jp">info@aaaaaaaaa.jp</a>
+                                    （送信専用アドレス）より各種メールをお送りします。
+                                </p>
+                                <p class="faq__item__answer-text">
+                                    迷惑メール対策などで「ドメイン指定受信」等の設定をされているお客様は、個別に解除のご設定をお願いいたします。<br>
+                                    また、自動入力でご注文情報を誤入力の場合、通常ご利用されているアドレスと異なるご連絡先のご登録となっている場合がございます。<br>
+                                    複数のアドレスをご利用の場合は合わせて確認いただきますよう、お願い致します。
+                                </p>
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__item__question">発送日・発送先を変更したい</summary>
+                            <div class="faq__item__answer">
+                                <p class="faq__item__answer-text">
+                                    梱包前の場合のみ、対応可能です。
+                                    <a href="contact.html" class="faq__item__answer-form">CONTACTフォーム</a>
+                                    より「ご注文確認メール」に記載の「受注番号」とご希望日時をお知らせください。必ずしもご希望に添えない場合もございますので、ご了承くださいませ。
+                                </p>
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__item__question">注文がキャンセルされました、なぜですか？</summary>
+                            <div class="faq__item__answer">
+                                <p class="faq__item__answer-text">下記のいずれかにあてはまる場合、システムが自動で不正注文の可能性があるとしてエラー検出致します。</p>
+                                <ul class="faq__item__answer-list faq__item__answer-list--ul">
+                                    <li class="faq__item__answer-list-item faq__item__answer-text">
+                                        クレッジットカードのセキュリティコードを複数回入力の形跡
+                                    </li>
+                                    <li class="faq__item__answer-list-item faq__item__answer-text">
+                                        お客様による複数のクレジットカード使用の形跡
+                                    </li>
+                                    <li class="faq__item__answer-list-item faq__item__answer-text">
+                                        注文時に使用されたクレジットカードの請求先ご住所の確認ができない、または請求先住所とクレジットカードに登録された住所が異なる
+                                    </li>
+                                </ul>
+                                <p class="faq__item__answer-text">防犯の観点から、不正注文の可能性が検知された場合、一旦ご注文をキャンセルさせていただきます。ご自身のご注文でお間違いない場合、大変お手数おかけいたしますが、異なるお支払い方法やクレジットカードをご利用し、再度ご注文をお願い致します。</p>
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__item__question">領収書を発行したい</summary>
+                            <div class="faq__item__answer">
+                                <p class="faq__item__answer-text">
+                                    <a href="contact.html" class="faq__item__answer-form">CONTACTフォーム</a>
+                                    より「領収書の発行について」を選択のうえ、ご連絡ください。またその際、領収書はご注文時に登録いただきましたメールアドレス宛にPDFでのご送付となります。
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+                </section>
+            </main>
+            
+            <footer class="footer">
+                
+                <div class="footer__wrapper">
+                    <div class="footer__top">
+                        <div class="footer__cta">
+                            <a class="link-btn link-btn--contact link-btn--dark" href="contact.html">
+                                <span class="link-btn__text">CONTACT</span>
+                                <span class="link-btn__arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                        <path d="M1.10063 18L10 9L1.10063 0L0 1.12898L7.78302 9L0 16.871L1.10063 18Z" fill="currentColor"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>    
+                        <a class="logo footer__logo" href="index.html">PEACHÉ</a>
+                    </div>
+
+                    <div class="footer__bottom">
+                        <ul class="footer__policy-list">
+                            <li class="footer__policy-item">
+                                <a href="#">利用規約</a>
+                            </li>
+                            <li class="footer__policy-item">
+                                <a href="#">配送ポリシー</a>
+                            </li>
+                            <li class="footer__policy-item">
+                                <a href="#">プライバシーポリシー</a>
+                            </li>
+                            <li class="footer__policy-item">
+                                <a href="#">返金ポリシー</a>
+                            </li>
+                            <li class="footer__policy-item">
+                                <a href="#">特定商取引法に基づく表記</a>
+                            </li>
+                        </ul>
+                        <small class="footer__copyright">&copy; 2027,PEACHÉ</small>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    
+        <!-- splide js -->
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="「桃」の香りを、大人の日常に。PEACHÉは、実在する桃の品種から着想を得た、桃の香りのみを扱うフレグランスブランドです。">
+        <title>PEACHÉ | 「桃」の香りを、大人の日常に。</title>
+
+        <!-- web font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Crimson+Text:wght@400&family=EB+Garamond:wght@500&family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet">
+        
+        <!-- リセットCSS -->
+        <link rel="stylesheet" href="assets/css/destyle.css">
+        <!-- splide CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+        <!-- style CSS -->
+        <link rel="stylesheet" href="assets/css/common.css">
+        <link rel="stylesheet" href="assets/css/top.css">
+
+    </head>
+
+    <body>
+        <div id="container" class="container">
+            <header class="site-header js-header">
+                <div class="site-header__inner">
+                    <h1 class="site-header__logo">
+                        <a class="logo" href="index.html">PEACHÉ</a>
+                    </h1>
+                    <!-- spのみ表示　ハンバーガー -->
+                    <button type="button" class="site-header__open-btn js-site-header-open-btn">
+                        <img src="assets/svg/hamburger-btn.svg" alt="メニューを開く">
+                    </button>
+
+                    <!-- spはドロワー　/ pcは横並びのグローバルナビ -->
+                    <nav class="site-nav js-site-nav" id="site-nav">
+                        
+                        <!-- sp ドロワーのオーバーレイ用 背景　jsでクリックしたときに閉じる処理もつける-->
+                        <div class="site-nav__overlay js-site-nav-overlay"></div>
+
+                        <div class="site-nav__panel">
+                            <div class="site-nav__header">
+                                <a class="logo site-nav__logo" href="index.html">PEACHÉ</a>
+                                <button type="button" class="site-nav__close-btn js-site-nav-close-btn">
+                                    <img src="assets/svg/close-btn.svg" alt="メニューを閉じる">
+                                </button>
+                            </div>
+                            <ul class="site-nav__list">
+                                <li class="site-nav__item"><a href="index.html">TOP</a></li>
+                                <li class="site-nav__item"><a href="fragrance/index.html">FRAGRANCE</a></li>
+                                <li class="site-nav__item"><a href="faq.html">FAQ</a></li>
+                                <li class="site-nav__item"><a href="contact.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="home-main">
+
+                <section class="hero-home">
+                        <h2 class="hero-home__title">PEACHÉ</h2>
+
+                        <!-- divの箱の中に、pictureタグとsourceおいて、画面が768以上になったらPC用の画像に自動で切り替わるようにしてる -->
+                        <div class="hero-home__image">
+                            <picture>
+                                <source srcset="assets/img/pc-top-hero@2x.jpg" media="(min-width: 768px)">
+                                <img src="assets/img/sp-top-hero@2x.jpg" alt="">
+                            </picture>
+                        </div>
+                        
+                        <div class="hero-home__btn-box">
+                            <a class="link-btn link-btn--hero link-btn--light" href="fragrance/index.html">
+                                <span class="link-btn__text">香りを探す</span>
+                                <span class="link-btn__arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                        <path d="M1.10063 18L10 9L1.10063 0L0 1.12898L7.78302 9L0 16.871L1.10063 18Z" fill="currentColor"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                </section>
+
+                <section class="concept">
+                    <div class="concept__inner">
+                            <h2 class="concept__title">「桃」の香りを、大人の日常に。</h2>
+                            <p class="concept__lead">大人のための<br class="sp-br">ピーチフレグランスブランド</p>
+                        <div class="concept__text-group">
+                            <p class="concept__text">PEACHÉは、大人女性×桃をコンセプトに、桃の香りのみを扱うフレグランスブランドです。</p>
+                            <p class="concept__text">実在する桃の品種から着想を得た、甘さによりすぎない桃の香り。香水が苦手な方でも取り入れやすい、やさしく自然な香りに仕上げています。</p>
+                        </div>
+                        <p class="concept__message">仕事の日も、休日も、特別な日も。<br>日々の暮らしに寄り添う、桃のフレグランスをお届けします。</p>
+                    </div>
+                </section>
+
+                <section class="our-scents">
+                    <h2 class="section__title section__title--our-scents">OUR SCENTS</h2>
+
+                    <div class="splide our-scents__slider js-top-slider" aria-label="香りの一覧">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide our-scents__item">
+                                    <a href="fragrance/hakuho.html" class="our-scents__link">
+                                        <img src="assets/img/top-scents-hakuho@2x.png" alt="HAKUHOの香水ボトル">
+                                        <p class="our-scents__name">HAKUHO</p>
+                                    </a>
+                                </li>
+                                <li class="splide__slide our-scents__item">
+                                    <a href="fragrance/akatsuki.html" class="our-scents__link">
+                                        <img src="assets/img/top-scents-akatsuki@2x.png" alt="AKATSUKIの香水ボトル">
+                                        <p class="our-scents__name">AKATSUKI</p>
+                                    </a>
+                                </li>
+                                <li class="splide__slide our-scents__item">
+                                    <a href="fragrance/kawanakajima.html" class="our-scents__link">
+                                        <img src="assets/img/top-scents-kawanakajima@2x.png" alt="KAWANAKAJIMAの香水ボトル">
+                                        <p class="our-scents__name">KAWANAKAJIMA</p>
+                                    </a>
+                                </li>
+                                <li class="splide__slide our-scents__item">
+                                    <a href="fragrance/shimizu.html" class="our-scents__link">
+                                        <img src="assets/img/top-scents-shimizu@2x.png" alt="SHIMIZUの香水ボトル">
+                                        <p class="our-scents__name">SHIMIZU</p>
+                                    </a>
+                                </li>
+                                <li class="splide__slide our-scents__item">
+                                    <a href="fragrance/natsukko.html" class="our-scents__link">
+                                        <img src="assets/img/top-scents-natsukko@2x.png" alt="NATSUKKOの香水ボトル">
+                                        <p class="our-scents__name">NATSUKKO</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="our-scents__cta">
+                        <a class="link-btn link-btn--section link-btn--dark" href="fragrance/index.html">
+                            <span class="link-btn__text">香りを見る</span>
+                            <span class="link-btn__arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                    <path d="M1.10063 18L10 9L1.10063 0L0 1.12898L7.78302 9L0 16.871L1.10063 18Z" fill="currentColor"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="our-philosophy">
+                    <div class="our-philosophy__head">
+                        <h2 class="section__title section__title--our-philosophy">OUR PHILOSOPHY</h2>
+                    </div>
+
+                    <!-- PC 表示用 -->
+                    <div class="our-philosophy__pc">
+
+                        <div class="our-philosophy__pc-wrapper">
+
+                            <!-- pc 1 -->
+                            <div class="our-philosophy__row-block">
+                                <div class="our-philosophy__circle-block">
+                                    <div class="our-philosophy__circle our-philosophy__circle--leaf-left">
+                                        <p class="our-philosophy__label">桃という素材へのこだわり</p>
+                                    </div>
+                                </div>
+
+                                <div class="our-philosophy__content-block">
+                                    <p class="our-philosophy__text">PEACHÉは「桃」というひとつの香りに向き合い続けるフレグランスブランドです。やわらかな甘さと、みずみずしい透明感をあわせもつ桃の香り。その自然な甘さに惹かれ、私たちは「桃」という素材を選びました。</p>
+                                    <img class="our-philosophy__img our-philosophy__img--01" src="assets/img/top-philosophy-img-1@2x.png" alt="">
+                                </div>
+                            </div>
+
+                            <!-- pc 2 -->
+                            <div class="our-philosophy__row-block">
+                                <div class="our-philosophy__circle-block">
+                                    <div class="our-philosophy__circle our-philosophy__circle--leaf-left">
+                                        <p class="our-philosophy__label">大人の日常に寄り添う香り</p>
+                                    </div>
+                                </div>
+
+                                <div class="our-philosophy__content-block">
+                                    <p class="our-philosophy__text">香りが主張しすぎず、近くにいる人にも心地よく感じられるやさしい香り設計。仕事の日も、休日も、特別の日も自然に身にまとえる香りを目指しています。大人世代が安心して選べる、ピーチフレグランスです。</p>
+                                    <img class="our-philosophy__img our-philosophy__img--02" src="assets/img/top-philosophy-img-2@2x.png" alt="">
+                                </div>
+                            </div>
+
+                            <!-- pc 3 -->
+                            <div class="our-philosophy__row-block">
+                                <div class="our-philosophy__circle-block">
+                                    <div class="our-philosophy__circle our-philosophy__circle--leaf-left">
+                                        <p class="our-philosophy__label">時間とともに変化する香り</p>
+                                    </div>
+                                </div>
+
+                                <div class="our-philosophy__content-block">
+                                    <p class="our-philosophy__text">つけた瞬間だけで終わらず、時間とともに表情を変えていく香り。トップからラストへと移ろう中で、少しずつ深みが増し、自然と記憶に残る余韻を描きます。軽すぎず、重すぎない、大人の肌に馴染むバランスを大切にしています。</p>
+                                    <img class="our-philosophy__img our-philosophy__img--03" src="assets/img/top-philosophy-img-3@2x.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SP 表示用 -->
+                    <div class="our-philosophy__sp">
+                        <div class="our-philosophy__sp-wrapper">
+                            <div class="our-philosophy__list">
+                                <!-- sp circle intro 01 -->
+                                <div class="our-philosophy__item">
+                                    <!-- モーダルを開くボタン　data-modalの値と、開きたいモーダル側のの id を合致させる -->
+                                    <button 
+                                        class="our-philosophy__btn-open our-philosophy__circle our-philosophy__circle--leaf-left js-philosophy-open-btn"
+                                        type="button"
+                                        data-modal="philosophy-modal-01"
+                                    >
+                                        <span class="our-philosophy__label">桃という素材へのこだわり</span>
+                                        <span class="our-philosophy__plus">+</span>
+                                    </button>
+                                </div>
+                                <!-- sp circle intro 02 -->
+                                <div class="our-philosophy__item">
+                                    <!-- モーダルを開くボタン　data-modalの値と、開きたいモーダル側のの id を合致させる -->
+                                    <button 
+                                        class="our-philosophy__btn-open our-philosophy__circle our-philosophy__circle--leaf-right js-philosophy-open-btn"
+                                        type="button"
+                                        data-modal="philosophy-modal-02"
+                                    >
+                                        <span class="our-philosophy__label">大人の日常に寄り添う香り</span>
+                                        <span class="our-philosophy__plus">+</span>
+                                    </button>
+                                </div>
+                                <!-- sp circle intro 03 -->
+                                <div class="our-philosophy__item">
+                                    <!-- モーダルを開くボタン　data-modalの値と、開きたいモーダル側のの id を合致させる -->
+                                    <button 
+                                        class="our-philosophy__btn-open our-philosophy__circle our-philosophy__circle--leaf-left js-philosophy-open-btn"
+                                        type="button"
+                                        data-modal="philosophy-modal-03"
+                                    >
+                                        <span class="our-philosophy__label">時間とともに変化する香り</span>
+                                        <span class="our-philosophy__plus">+</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- sp modal 01 -->
+                        <div
+                            class="our-philosophy-modal js-philosophy-modal"
+                            id="philosophy-modal-01"
+                        >
+                            <!-- 背景のoverlay　jsでクリックしたときに閉じる処理もつける　-->
+                            <div class="our-philosophyーmodal__overlay js-philosophy-overlay"></div>
+
+                            <!-- モーダルの中身 -->
+                            <div class="our-philosophy-modal__inner">
+                                <h3 class="our-philosophy-modal__title">桃という素材へのこだわり</h3>
+                                <img class="our-philosophy__img our-philosophy__img--01" src="assets/img/top-philosophy-img-1@2x.png" alt="">
+                                <p class="our-philosophy__text">PEACHÉは「桃」というひとつの香りに向き合い続けるフレグランスブランドです。やわらかな甘さと、みずみずしい透明感をあわせもつ桃の香り。その自然な甘さに惹かれ、私たちは「桃」という素材を選びました。</p>
+                                <button class="our-philosophy-modal__btn-close js-philosophy-close" type="button">
+                                    <span class="our-philosophy-modal__close-icon">
+                                        <img src="assets/svg/close-btn.svg" alt="">
+                                    </span>
+                                    <span class="our-philosophy-modal__close-text">閉じる</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- sp modal 02 -->
+                        <div
+                            class="our-philosophy-modal js-philosophy-modal"
+                            id="philosophy-modal-02"
+                        >
+                            <!-- 背景のoverlay　jsでクリックしたときに閉じる処理もつける　-->
+                            <div class="our-philosophyーmodal__overlay js-philosophy-overlay"></div>
+
+                            <div class="our-philosophy-modal__inner">
+                                <h3 class="our-philosophy-modal__title">大人の日常に寄り添う香り</h3>
+                                <img class="our-philosophy__img our-philosophy__img--02" src="assets/img/top-philosophy-img-2@2x.png" alt="">
+                                <p class="our-philosophy__text">香りが主張しすぎず、近くにいる人にも心地よく感じられるやさしい香り設計。仕事の日も、休日も、特別の日も自然に身にまとえる香りを目指しています。大人世代が安心して選べる、ピーチフレグランスです。</p>
+                                <button class="our-philosophy-modal__btn-close js-philosophy-close" type="button">
+                                    <span class="our-philosophy-modal__close-icon">
+                                        <img src="assets/svg/close-btn.svg" alt="">
+                                    </span>
+                                    <span class="our-philosophy-modal__close-text">閉じる</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- sp modal 03 -->
+                        <div
+                            class="our-philosophy-modal js-philosophy-modal"
+                            id="philosophy-modal-03"
+                        >
+                            <!-- 背景のoverlay　jsでクリックしたときに閉じる処理もつける　-->
+                            <div class="our-philosophyーmodal__overlay js-philosophy-overlay"></div>
+
+                            <div class="our-philosophy-modal__inner">
+                                <h3 class="our-philosophy-modal__title">時間とともに変化する香り</h3>
+                                <img class="our-philosophy__img our-philosophy__img--03" src="assets/img/top-philosophy-img-3@2x.png" alt="">
+                                <p class="our-philosophy__text">つけた瞬間だけで終わらず、時間とともに表情を変えていく香り。トップからラストへと移ろう中で、少しずつ深みが増し、自然と記憶に残る余韻を描きます。軽すぎず、重すぎない、大人の肌に馴染むバランスを大切にしています。</p>
+                                <button class="our-philosophy-modal__btn-close js-philosophy-close" type="button">
+                                    <span class="our-philosophy-modal__close-icon">
+                                        <img src="assets/svg/close-btn.svg" alt="">
+                                    </span>
+                                    <span class="our-philosophy-modal__close-text">閉じる</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="our-quality">
+                    <h2 class="section__title section__title--our-quality">OUR QUALITY</h2>
+                    <div class="our-quality__wrapper">
+                        <video class="our-quality__video" autoplay muted loop playsinline>
+                            <source src="assets/video/quality-video.mp4">
+                        </video>
+
+                        <div class="our-quality__content">
+                            <div class="our-quality__block">
+                                <h3 class="our-quality__block-title">香り設計</h3>
+                                <p class="our-quality__block-text">果実本来のみずみずしさを軸に、単調な甘さだけに寄らない香調設計を行っています。親しみのある果実だからこそ、透明感と奥行きを重ね、洗練されたバランスに仕上げています。一瞬で消えず長く心地よく楽しめる持続感を大切にしています。</p>
+                            </div>
+
+                            <div class="our-quality__block">
+                                <h3 class="our-quality__block-title">やさしさ、肌への配慮</h3>
+                                <p class="our-quality__block-text">日常で使いやすいよう、香りの強さや刺激感にも配慮しています。香水が苦手な方でも取り入れやすい、やさしく穏やかな印象を目指しています。</p>
+                            </div>
+                            
+                            <div class="our-quality__cta">
+                                <a class="link-btn link-btn--section link-btn--dark" href="fragrance/index.html">
+                                    <span class="link-btn__text">香りを探す</span>
+                                    <span class="link-btn__arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                            <path d="M1.10063 18L10 9L1.10063 0L0 1.12898L7.78302 9L0 16.871L1.10063 18Z" fill="currentColor"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- フローティングCTA -->
+            <a class="floating-cta" href="fragrance/index.html">
+                <span class="floating-cta__text">香りを探す</span>
+            </a>
+            
+            
+            <footer class="footer">
+                
+                <div class="footer__wrapper">
+                    <div class="footer__top">
+                        <div class="footer__cta">
+                            <a class="link-btn link-btn--contact link-btn--dark" href="contact.html">
+                                <span class="link-btn__text">CONTACT</span>
+                                <span class="link-btn__arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                        <path d="M1.10063 18L10 9L1.10063 0L0 1.12898L7.78302 9L0 16.871L1.10063 18Z" fill="currentColor"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>    
+                        <a class="logo footer__logo" href="index.html">PEACHÉ</a>
+                    </div>
+
+                    <div class="footer__bottom">
+                        <ul class="footer__policy-list">
+                            <li class="footer__policy-item">
+                                <a href="#">利用規約</a>
+                            </li>
+                            <li class="footer__policy-item">
+                                <a href="#">配送ポリシー</a>
+                            </li>
+                            <li class="footer__policy-item">
+                                <a href="#">プライバシーポリシー</a>
+                            </li>
+                            <li class="footer__policy-item">
+                                <a href="#">返金ポリシー</a>
+                            </li>
+                            <li class="footer__policy-item">
+                                <a href="#">特定商取引法に基づく表記</a>
+                            </li>
+                        </ul>
+                        <small class="footer__copyright">&copy; 2027,PEACHÉ</small>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- splide js -->
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

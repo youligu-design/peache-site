@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+.contact-form__section {
+    padding: 80px 5.1%;
+}
+
+.contact-form__inner {
+    max-width: 600px;
+    margin: 0 auto;  
+}
+
+.contact-form__text-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form__text-wrap p,
+.contact-form__text-wrap a,
+.contact-form__text-wrap span {
+    font-family: var(--font-body-ja);
+    color: var(--color-text-body);
+    font-size: 1.6rem;
+    line-height: 2;
+    letter-spacing: 0.08em;
+}
+
+.contact-form__text-wrap a {
+    text-decoration: underline;
+    color: var(--color-text-muted);
+}
+
+.contact-form {
+    margin-top: 56px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-form__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form__label {
+    color: var(--color-text-body);
+    font-family: var(--font-body-ja);
+    font-size: 1.6rem;
+    line-height: 1;
+    letter-spacing: 0.08em;
+}
+
+.contact-form__required {
+    color: #DA1725;
+    font-family: var(--font-body-ja);
+    font-size: 1.6rem;
+    line-height: 1;
+    letter-spacing: 0.08em;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #C4C4C4;
+    background: #FFF;
+
+    padding: 10px 10px;
+}
+
+.contact-form__input {
+    height: 44px;
+}
+
+.contact-form__textarea {
+    min-height: 300px;
+}
+
+.contact-btn__wrap {
+    margin-inline: auto;
+    margin-top: 10px;
+}
+
+.contact-btn {
+    border-radius: 5px;
+    background: #6A6A6A;
+    text-align: center;
+
+    color: #fff;
+    font-family: var(--font-body-ja);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.1em;
+
+    padding: 30px 100px;
+    width: 100%;
+    min-width: 200px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.4s;
+}
+
+.contact-btn:hover {
+    opacity: 0.8;
+}
+
+
+@media screen and (min-width: 768px)  {
+
+    .contact-form__section {
+        padding: 130px 5.1%;
+    }
+
+    .contact-form__inner {
+        max-width: 800px;
+    }
+
+    .contact-form {
+        margin-top: 80px;
+        gap: 50px;
+    }
+
+    .contact-form__item {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 20px;
+    }
+
+    .contact-btn {
+        padding: 30px 100px;
+        min-width: 300px;
+    }
+}
+
+

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="PEACHÉのお問い合わせページです。">
+        <title>CONTACT | PEACHÉ</title>
+
+        <!-- web font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Crimson+Text:wght@400&family=EB+Garamond:wght@500&family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet">
+        
+        <!-- リセットCSS -->
+        <link rel="stylesheet" href="assets/css/destyle.css">
+        <!-- splide CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+        <!-- style CSS -->
+        <link rel="stylesheet" href="assets/css/common.css">
+        <link rel="stylesheet" href="assets/css/contact.css">
+    </head>
+
+    <body>
+        <div id="contact-page" class="contact-page">
+            <header class="site-header js-header">
+                <div class="site-header__inner">
+                    <h1 class="site-header__logo">
+                        <a class="logo" href="index.html">PEACHÉ</a>
+                    </h1>
+                    <!-- spのみ表示　ハンバーガー -->
+                    <button type="button" class="site-header__open-btn js-site-header-open-btn">
+                        <img src="assets/svg/hamburger-btn.svg" alt="メニューを開く">
+                    </button>
+
+                    <!-- spはドロワー　/ pcは横並びのグローバルナビ -->
+                    <nav class="site-nav js-site-nav" id="site-nav">
+                        
+                        <!-- sp ドロワーのオーバーレイ用 背景　jsでクリックしたときに閉じる処理もつける-->
+                        <div class="site-nav__overlay js-site-nav-overlay"></div>
+
+                        <div class="site-nav__panel">
+                            <div class="site-nav__header">
+                                <a class="logo site-nav__logo" href="index.html">PEACHÉ</a>
+                                <button type="button" class="site-nav__close-btn js-site-nav-close-btn">
+                                    <img src="assets/svg/close-btn.svg" alt="メニューを閉じる">
+                                </button>
+                            </div>
+                            <ul class="site-nav__list">
+                                <li class="site-nav__item"><a href="index.html">TOP</a></li>
+                                <li class="site-nav__item"><a href="fragrance/index.html">FRAGRANCE</a></li>
+                                <li class="site-nav__item"><a href="faq.html">FAQ</a></li>
+                                <li class="site-nav__item"><a href="contact.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="contact-main">
+                <section class="page-hero">
+                    <div class="page-hero__title-group">
+                        <h1 class="page-hero__title">お問い合わせ</h1>
+                        <p class="page-hero__sabtitle">CONTACT</p>
+                    </div>
+
+                    <!-- divの箱の中に、pictureタグとsourceおいて、画面が768以上になったらPC用の画像に自動で切り替わるようにしてる -->
+                    <div class="page-hero__img">
+                        <picture>
+                            <source srcset="assets/img/pc-sab-hero@2x.jpg" media="(min-width: 768px)">
+                            <img src="assets/img/sp-sab-hero@2x.jpg" alt="">
+                        </picture>
+                    </div>
+                </section>
+
+                <nav class="breadcrumb">
+                    <div class="breadcrumb__inner">
+                        <ol class="breadcrumb__list">
+                            <li class="breadcrumb__item">
+                                <a href="index.html">TOP</a>
+                            </li>
+
+                            <li class="breadcrumb__item" aria-current="page">
+                                <a href="">CONTACT</a>
+                            </li>
+
+                        </ol>
+                    </div>
+                </nav>
+
+                <section class="contact-form__section">
+                    <div class="contact-form__inner">
+                        
+                        <div class="contact-form__text-wrap">
+                            <p>当社へのお問い合わせは、以下のフォームよりお願いいたします。<br>お急ぎのかたは、<a href="0000000000">TEL 000-000-0000</a>までご連絡ください。</p>
+                            <span>※マークは必須項目です。</span>
+                        </div>
+
+                        <form class="contact-form" action="#" method="post">
+                            <!-- 氏名 -->
+                            <div class="contact-form__item">
+                                <label class="contact-form__label" for="name">お名前
+                                    <span class="contact-form__required">※</span>
+                                </label>
+                                <input class="contact-form__input" type="text" id="name" name="user_name" required>
+                            </div>
+                            
+                            <div class="contact-form__item">
+                                <label class="contact-form__label" for="name">お名前（フリガナ）
+                                    <span class="contact-form__required">※</span>
+                                </label>
+                                <input class="contact-form__input" type="text" id="name" name="user_name" required>
+                            </div>
+
+                            <!-- メールアドレス -->
+                            <div class="contact-form__item">
+                                <label class="contact-form__label" for="mail">メールアドレス
+                                    <span class="contact-form__required">※</span>
+                                </label>
+                                <input class="contact-form__input" type="email" id="mail" name="user_email" required>
+                            </div>
+
+                            <!-- 電話番号 -->
+                            <div class="contact-form__item">
+                                <label class="contact-form__label" for="tel">電話番号
+                                    <span class="contact-form__required">※</span>
+                                </label>
+                                <input class="contact-form__input" type="tel" id="tel" name="user_tel" required>
+                            </div>
+
+                            <!-- お問い合わせ内容 -->
+                            <div class="contact-form__item contact-form__item--textarea">
+                                <label class="contact-form__label" for="message">お問い合わせ内容
+                                    <span class="contact-form__required">※</span>
+                                </label>
+                                <textarea class="contact-form__textarea" id="message" name="user_message" required></textarea>
+                            </div>
+
+                            <!-- 送信ボタン -->
+                            <div class="contact-btn__wrap">
+                                <button class="contact-btn" type="submit">送信する</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </section>
+            </main>
+            
+            <footer class="footer">
+                
+                <div class="footer__wrapper">
+                    <div class="footer__top">
+                        <div class="footer__cta">
+                            <a class="link-btn link-btn--contact link-btn--dark" href="contact.html">
+                                <span class="link-btn__text">CONTACT</span>
+                                <span class="link-btn__arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                        <path d="M1.10063 18L10 9L1.10063 0L0 1.12898L7.78302 9L0 16.871L1.10063 18Z" fill="currentColor"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>    
+                        <a class="logo footer__logo" href="index.html">PEACHÉ</a>
+                    </div>
+
+                    <div class="footer__bottom">
+                        <ul class="footer__policy-list">
+                            <li class="footer__policy-item">
+                                <a href="#">利用規約</a>
+                            </li>
+                            <li class="footer__policy-item">
+                                <a href="#">配送ポリシー</a>
+                            </li>
+                            <li class="footer__policy-item">
+                                <a href="#">プライバシーポリシー</a>
+                            </li>
+                            <li class="footer__policy-item">
+                                <a href="#">返金ポリシー</a>
+                            </li>
+                            <li class="footer__policy-item">
+                                <a href="#">特定商取引法に基づく表記</a>
+                            </li>
+                        </ul>
+                        <small class="footer__copyright">&copy; 2027,PEACHÉ</small>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    
+        <!-- splide js -->
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

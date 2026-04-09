@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/* ===================
+fragrance-archive（一覧）
+====================== */
+
+.fragrance-archive {
+    padding: 80px 5.1%;
+}
+
+.fragrance-archive__inner {
+    max-width: 600px;
+    margin: 0 auto; 
+}
+
+.fragrance-archive__list {
+    display: grid;
+    grid-template-columns:  1fr;
+    gap: 50px 0;
+}
+
+.fragrance-archive__card {
+    display: block;
+    max-width: 250px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    /* カードをホバーしたら変わる時の変化の速度 */
+    transition: 
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+/* カードをホバーしたら下記が変化する　*/
+.fragrance-archive__card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 1.2rem 2.4rem rgba(92, 73, 64, 0.10);
+    border-color: #cfc1bb;
+}
+
+.fragrance-archive__img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.fragrance-archive__img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fragrance-archive__text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px 20px 32px;
+    background-color: var(--color-bg-light);
+}
+
+.fragrance-archive__name {
+    color: var(--color-text-heading);
+    text-align: center;
+    font-family: var(--font-body-en);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.06em;
+}
+
+.fragrance-archive__price {
+    color: var(--color-text-heading);
+    text-align: center;
+    font-family: var(--font-body-en);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.06em;
+}
+
+.fragrance-archive__arrow {
+    display: block;
+}
+
+.fragrance-archive__arrow img {
+    display: block;
+    width: 50px;
+    height: auto;
+}
+
+
+@media screen and (min-width: 670px) {
+
+    .fragrance-archive__inner {
+        max-width: 700px;
+    }
+
+    .fragrance-archive__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 24px;
+    }
+
+    .fragrance-archive__card {
+        max-width: 280px;
+    }
+}    
+
+@media screen and (min-width: 1000px) {
+
+    .fragrance-archive__inner {
+        max-width: 1000px;
+    }
+
+    .fragrance-archive {
+        padding: 130px 5.1%;
+    }
+
+    .fragrance-archive__list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px 24px;
+    }
+
+    .fragrance-archive__card {
+        max-width: 300px;
+    }
+}
+
+
+
+
