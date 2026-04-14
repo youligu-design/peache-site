@@ -27,11 +27,12 @@
 }
 
 .faq__item__question:hover {
-    opacity: 0.75;
+    opacity: 0.6;
 }
 
 .faq__item__answer {
-    padding: 14px 16px 0 16px;
+    padding: 20px 16px 20px 16px;
+    background-color: var(--color-bg-light);
 }
 
 .faq__item__answer-text {
@@ -97,7 +98,7 @@
 .faq__item__answer-form:hover,
 .faq__item__answer-form:hover,
 .faq__item__answer-mail:hover {
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 /* ol 1. 2. 3.　のリスト表示*/
