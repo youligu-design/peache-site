@@ -54,16 +54,17 @@ fragrance-archive（一覧）
     height: 100%;
     object-fit: cover;
 
+    /* ホバーした時の動き */
     transition: opacity 0.4s ease;
 }
 
+/* ホバー用の写真見えないようにする　下のメディアクエリで、
+fragrance-archive__itemをhoverしたら片方見える・片方見えなくするようにしてる　*/
 .fragrance-archive__photo--hover {
     position: absolute;
     opacity: 0;
     inset: 0;
 }
-
-
 
 .fragrance-archive__text-area {
     display: flex;
@@ -141,7 +142,8 @@ fragrance-archive（一覧）
     }
 }
 
-@media screen and (min-width: 768px) {
+/* 画面幅1024以上の時、ホバーで写真が切り替わるように */
+@media(hover:hover) and (min-width: 1024px) {
     
     .fragrance-archive__card:hover .fragrance-archive__photo--hover  {
         opacity: 1;
