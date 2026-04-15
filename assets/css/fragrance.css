@@ -63,13 +63,7 @@ fragrance-archive（一覧）
     transition: opacity 0.4s ease;
 }
 
-.fragrance-archive__card:hover .fragrance-archive__photo--hover  {
-    opacity: 1;
-}
 
-.fragrance-archive__card:hover .fragrance-archive__photo--default {
-    opacity: 0;
-}
 
 .fragrance-archive__text-area {
     display: flex;
@@ -145,6 +139,18 @@ fragrance-archive（一覧）
     .fragrance-archive__card {
         max-width: 300px;
     }
+}
+
+@media (hover: hover) {
+    
+    .fragrance-archive__card:hover .fragrance-archive__photo--hover  {
+        opacity: 1;
+    }
+
+    .fragrance-archive__card:hover .fragrance-archive__photo--default {
+        opacity: 0;
+    }
+    
 }
 
 
